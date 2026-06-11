@@ -619,7 +619,7 @@ if analyze:
 
         st.markdown("#### 🧩 이번 주 미션")
         for mission in result["이번 주 미션"]:
-            st.write(f"{i}. {mission}")
+            st.markdown(f"- {mission}")
 
         mode_map = {"재테크 코치": "coach", "소비습관 분석": "habit", "목표 달성 전략": "goal"}
         with st.spinner("AI 맞춤 코멘트를 생성하는 중입니다..."):
